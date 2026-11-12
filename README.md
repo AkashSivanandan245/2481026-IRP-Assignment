@@ -26,8 +26,7 @@ The program helps track students' placement readiness by maintaining and analyzi
 - `runner_up.py` - Runner-Up Score solution
 - `README.md` - Project documentation
 
-### How to Run<img width="1322" height="820" alt="Screenshot 2026-11-12 093718" src="https://github.com/user-attachments/assets/4f39eed6-0567-4142-923d-85b2f05324a7" />
-
+### How to Run
 
 #### Placement Readiness Tracker
 
