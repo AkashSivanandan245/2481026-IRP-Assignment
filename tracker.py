@@ -37,10 +37,12 @@ def add_student():
 
     students.append(student)
 
+def average(student):
+    return (student["aptitude"] + student["verbal"] + student["coding"]) / 3
 
 
 def main():
     add_student()
-
+  
 if __name__ == "__main__":
     main()
