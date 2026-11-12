@@ -51,6 +51,13 @@ def grade(avg):
     else:
         return "Needs Practice"
 
+def top_scorer():
+    return max(students, key=average)
+
+def needs_practice():
+    return [s for s in students if average(s) < 40]
+
+
 def main():
     add_student()
   
