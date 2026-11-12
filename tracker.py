@@ -58,8 +58,32 @@ def needs_practice():
     return [s for s in students if average(s) < 40]
 
 
+def print_students():
+    for s in students:
+        avg = average(s)
+
+        print("\nName:", s["name"])
+        print("Roll No:", s["roll_no"])
+        print("Aptitude:", s["aptitude"])
+        print("Verbal:", s["verbal"])
+        print("Coding:", s["coding"])
+        print("Average:", avg)
+        print("Grade:", grade(avg))
+
 def main():
     add_student()
-  
+
+    print_students()
+
+    best = top_scorer()
+    print("\nTop Scorer:", best["name"])
+    print("Average:", average(best))
+
+    weak = needs_practice()
+    print("\nStudents needing practice:", len(weak))
+
+    for s in weak:
+        print(s["name"])
+
 if __name__ == "__main__":
     main()
